@@ -1,0 +1,32 @@
+{
+	"name": "ds_tbl_pizza_types",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_db_pizzas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "pizza_type_id",
+				"type": "varchar"
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "category",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tbl_pizza_types"
+		}
+	}
+}
